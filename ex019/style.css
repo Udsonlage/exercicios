@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+    background-color: grey;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: blue;
+    padding: 1px;
+}
+
+#titulo {
+    font-family: monda;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    background-color: blue;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding-right: 50px;
+    padding-left: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+    
+
+}
+
+main {
+    background-color: white;
+}
+
+p {
+    text-align: justify;
+}

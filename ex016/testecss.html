@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste para css</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        h1 {
+            font-weight: bold;
+        }
+
+        .primeiro::before {
+            content: "❤️";
+        }
+
+        .segundo::after {
+            content: "❤️";
+        }
+
+        .terceiro::first-letter {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .quarto::first-line {
+            font-size: 100px;
+            font-weight: bold;
+        }
+
+        div > .primeiro {
+            display: none;
+        }
+
+        div:hover > .primeiro {
+            display: block;
+            color: yellow;
+            background-color: blueviolet;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Estou fazendo um teste de <br> Pseudo-Elementos</h1>
+    <div>
+        Vou esconder o primeiro parágrafo.
+        <p class="primeiro">Vou testar o primeiro aqui</p>
+    </div>
+    <p class="segundo">Vou testar o segundo aqui</p>
+    <p class="terceiro">Vou testar o terceiro aqui</p>
+    <p class="quarto">Vou testar o quarto aqui</p>
+    
+</body>
+</html>

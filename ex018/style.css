@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body {
+    font-family: montserrat;
+}
+
+#principal {
+    text-align: center;
+    margin: 50px, 0px, 50px, 00px;
+}
+
+aside {
+    display: none;
+}

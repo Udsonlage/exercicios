@@ -1,0 +1,22 @@
+
+
+
+h1 {
+  font-family: "Playwrite NZ Basic", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+h2 {
+    font-family: helvetica;
+    color: blue;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+p {
+    font-family: Arial;
+    text-align: justify;
+}

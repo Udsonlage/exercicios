@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens e áudios</title>
+</head>
+<body>
+    <h1>Imagens flexíveis</h1>
+    <p>Essas imagens serão flexíveis e mudarão de acordo com o tamanho do site.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Produzindo Áudio</h1>
+    <p>vamos aprender a reproduzir em HTML5</p>
+    <audio src="áudio/Upbeat Funk Retro by Infraction [No Copyright Music] _ Funk Up [tpjl8ybe2aQ].mp3" controls></audio>
+    <h1>Segunda opção de fazer</h1>
+    <audio controls>
+        <source src="áudio/Upbeat Funk Retro by Infraction [No Copyright Music] _ Funk Up [tpjl8ybe2aQ].mp3" type="audio/mpeg">
+        <source src="áudio/Upbeat Funk Retro by Infraction [No Copyright Music] _ Funk Up [tpjl8ybe2aQ].ogg" type="audio/ogg"><source src="áudio/Upbeat Funk Retro by Infraction [No Copyright Music] _ Funk Up [tpjl8ybe2aQ].wav" type="audio/wav">
+        <p>infelizmente seu navegador não consegue reproduzir áudio. <a href="áudio/Upbeat Funk Retro by Infraction [No Copyright Music] _ Funk Up [tpjl8ybe2aQ].mp3">Clique aqui</a> para baixar o arquivo MP3</p>
+    </audio>
+</body>
+</html>
