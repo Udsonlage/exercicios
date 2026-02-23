@@ -15,3 +15,7 @@
 #segundo {
     background-image: linear-gradient(to bottom, yellow, red);
 }
+
+#terceiro {
+    background-image: url(midia/pattern001.png);
+}
