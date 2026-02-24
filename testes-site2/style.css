@@ -11,12 +11,73 @@ header {
 }
 
 header h1 {
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-align: center;
     padding: 10px;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 header p {
-    
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+    background-image: linear-gradient(to right, purple, blue);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav a:hover {
+    background-color: rgb(81, 81, 255);
+    text-decoration: underline;
+    border-radius: 5px 5px 5px 5px;
+}
+
+section {
+    background-color: white;
+    width: 100%;
+    max-width: 800px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0 auto;
+}
+
+#principal {
+    height: 400px;
+    background-image: url(midia/galaxia.png);
+    background-size: contain;
+    background-attachment: fixed;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#principal h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: 0;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section p {
+    text-align: justify;
 }
