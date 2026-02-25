@@ -12,6 +12,7 @@ header {
 
 header h1 {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 5vw;
     color: white;
     text-align: center;
     padding: 10px;
@@ -54,9 +55,13 @@ section {
     background-color: white;
     width: 100%;
     max-width: 800px;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px 10px 10px;
     border-radius: 0px 0px 10px 10px;
     margin: 0 auto;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #principal {
@@ -80,4 +85,32 @@ h2 {
 
 section p {
     text-align: justify;
+}
+
+aside {
+    background-image: url(midia/galaxia2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+    border-radius: 10px;
+}
+
+.contadd {
+    padding: 10px;
+    color: white;
+}
+
+footer{
+    background-color: black;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+footer h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-size: 2vw;
+    text-align: center; 
+    margin: 0;
 }
