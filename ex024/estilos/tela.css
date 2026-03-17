@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*de tela*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: grey;
+    padding: 10px;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    background-color: rgb(112, 112, 112);
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: darkgrey;
+    padding: 5px 8px 5px 8px;
+    border-radius: 5px;
+}
+
+main {
+    margin: auto;
+}
+
+main article {
+    width: 600px;
+    margin: auto;
+    
+}
