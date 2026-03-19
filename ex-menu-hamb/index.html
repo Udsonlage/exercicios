@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu hamburguinho</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: darkgray;
+        }
+
+        header {
+            background-color: grey;
+        }
+
+        #burger {
+            background-color: rgb(56, 56, 56);
+            color: grey;
+            display: block;
+            text-align: center;
+            margin: 1px;
+        }
+
+        #burger:hover {
+            background-color: darkgray;
+            color: black;
+            cursor: pointer;
+            
+        }
+
+        header h1 {
+            text-align: center;
+        }
+
+        menu {
+            display: none;
+        }
+
+        li {
+            text-align: center;
+            background-color: rgb(62, 62, 62);
+            color: white;
+            padding: 5px;
+            margin: 1px;
+
+        }
+
+        li:hover {
+            background-color: darkgray;
+            color: grey;
+        }
+
+        main {
+            background-color: white;
+            max-width: 90vw;
+            padding: 5px;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        h2, p {
+            padding: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="opcoes">
+            <ul>
+                <li>Opção 1</li>
+                <li>Opção 2</li>
+                <li>Opção 3</li>
+                <li>Opção 4</li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <h2>Testando Media queries</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque obcaecati ad adipisci. Illo tenetur quasi qui velit repellat, officiis voluptatum? Quisquam dolorum dolorem, ullam, nemo sit incidunt quo consequatur culpa aperiam deleniti corrupti pariatur excepturi consequuntur inventore facilis porro ab earum iure ipsam, nostrum autem blanditiis exercitationem. Consequuntur nihil nemo expedita at nesciunt suscipit aut, deserunt sint aliquam fugit obcaecati laboriosam earum commodi temporibus quis natus quibusdam illum fuga exercitationem aperiam corrupti perferendis dolorem blanditiis ut? Ad praesentium repellat aut.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea ipsa placeat veniam debitis asperiores aspernatur dolor. Nesciunt fuga magni doloremque tempore molestias aspernatur consequatur maxime incidunt, illum reprehenderit dolorum, odit, sapiente esse facere ea doloribus! Harum soluta voluptate vel excepturi dolorem, alias esse placeat cumque deserunt! Sed vero praesentium incidunt enim distinctio eius quam nostrum iure labore laborum odio sunt impedit pariatur magni non maxime ea nam libero ex earum, eaque repellat illo quae corporis. Quos incidunt dolores a praesentium.</p>
+    </main>
+    <script>
+        function clickMenu() {
+            if (opcoes.style.display == 'block') {
+                opcoes.style.display = 'none'
+            } else {
+                opcoes.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

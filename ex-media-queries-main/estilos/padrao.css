@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@media all {
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0;
+        margin: 0;
+    }
+
+    html, body {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    body {
+        background: url(../midia/udson\ ramos\ retrato.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    body {
+        background: url(../midia/udson\ ramos\ paisagem.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+    }
+}

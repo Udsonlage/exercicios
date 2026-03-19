@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+body {
+    background: url(../midia/udson\ ramos\ paisagem.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
