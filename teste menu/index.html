@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            padding: 0px 10px 0px 10px;
+            border-radius: 10px;
+        }
+
+        .logo {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .menu {
+            padding: 15px;
+            border: 1px solid white;
+            border-radius: 10px;
+        }
+
+        a {
+            font-family: Arial, Helvetica, sans-serif;
+            color: lightslategray;
+            text-decoration: none;
+            padding: 8px;
+        }
+
+        button {
+            color: white;
+            background-color: blueviolet;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 1px 1px 8px rgba(137, 43, 226, 0.874);
+        }
+
+        button:hover {
+            background-color: rgb(184, 120, 244);
+            cursor: pointer;
+        }
+
+        a:hover {
+            background-color: white;
+            color: blueviolet;
+            border-radius: 7px;
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>Logo</h2>
+        </div>
+
+        <div class="menu">
+            <a href="#">home</a>
+            <a href="#">menu</a>
+            <a href="#">opções</a>
+            <a href="#">sobre</a>
+        </div>
+        <div class="login">
+            <button>Faça login</button>
+        </div>
+    </header>
+</body>
+</html>
