@@ -1,0 +1,39 @@
+*{
+    font-family: montserrat, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.logoNaim{
+    width: 50px;
+    height: 55px;
+}
+
+.material-symbols-outlined{
+    color: #ede5db;
+    font-size: 50px;
+    font-variation-settings: 'opsz' 100;
+    cursor: pointer;
+}
+
+menu{
+    display: block;
+}
+
+.opcoes{
+    display: none;
+    text-align: center;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    border-top: 1px solid #ede5db;
+    border-bottom: 1px solid #ede5db;
+    border-left: none;
+    border-right: none;
+}
