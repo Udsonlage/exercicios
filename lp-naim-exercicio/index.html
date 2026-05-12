@@ -11,15 +11,44 @@
 <body>
     <header>
         <img src="Simbolo Offwhite v2.png" class="logoNaim" alt="logo Naim">
-        <span class="material-symbols-outlined">menu</span>
+        <span class="material-symbols-outlined" id="botaoHamb">menu</span>
     </header>
-        <menu>
-            <ol class="lista">
-                <li class="opcoes">Simule agora</li>
-                <li class="opcoes">área do cliente</li>
-                <li class="opcoes">segunda via boleto</li>
-            </ol>
-        </menu>
-        <script src="script.js"></script>
+    <menu id="lista" class="listaEscondida">
+        <ol>
+            <li class="opcoes">Simule agora</li>
+            <li class="opcoes">área do cliente</li>
+            <li class="opcoes">segunda via boleto</li>
+        </ol>
+    </menu>
+    <article>
+        <section class="hero">
+            <h1>Naim Seguro.</h1>
+            <h1>Simples assim.</h1>
+            <button id="btnSimule" class="botaoSimule">Simule agora!</button>
+            <img src="midia/mulher-feliz-dirigindo.jpg" class="imgMulherDirigindo" alt="mulher feliz dirigindo">
+        </section>
+        <section class="seguroComApolice">
+            <h1>Seguro com<br>Apólice.</h1>
+            <div class="infos">
+                <div class="caixa">
+                    <div class="tt"><h4>Sem análise de perfil</h4></div>
+                    <div class="info"><p>Aqui não fazemos análise de perfil ou consulta ao SPC e Serasa.</p></div>
+                </div>
+                <div class="caixa">
+                    <div class="tt"><h4>Sem análise de perfil</h4></div>
+                    <div class="info"><p>Aqui não fazemos análise de perfil ou consulta ao SPC e Serasa.</p></div>
+                </div>
+                <div class="caixa">
+                    <div class="tt"><h4>Sem análise de perfil</h4></div>
+                    <div class="info"><p>Aqui não fazemos análise de perfil ou consulta ao SPC e Serasa.</p></div>
+                </div>
+                <div class="caixa">
+                    <div class="tt"><h4>Sem análise de perfil</h4></div>
+                    <div class="info"><p>Aqui não fazemos análise de perfil ou consulta ao SPC e Serasa.</p></div>
+                </div>
+            </div>
+        </section>
+    </article>
+        <script type="module" src="script.js"></script>
 </body>
 </html>

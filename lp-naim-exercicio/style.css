@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+body{
+    background-color: #212121;
+}
+
 header{
     display: flex;
     align-items: center;
@@ -23,12 +27,16 @@ header{
     cursor: pointer;
 }
 
-menu{
+.listaEscondida{
+    display: none;
+}
+
+.listaAtiva{
     display: block;
 }
 
 .opcoes{
-    display: none;
+    color: #ede5db;
     text-align: center;
     padding: 10px 0px;
     box-sizing: border-box;
@@ -36,4 +44,69 @@ menu{
     border-bottom: 1px solid #ede5db;
     border-left: none;
     border-right: none;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1{
+    color: #b8f18a;
+    font-size: 3rem;
+}
+
+.botaoSimule{
+    background: linear-gradient(to right, #b8f18a, #ff6600);
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.imgMulherDirigindo{
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.seguroComApolice h1{
+    font-size: 2.5rem;
+    color: #ede5db;
+    text-align: center;
+    margin: 10px;
+}
+
+.infos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+
+}
+
+.tt{
+    background-color: #b8f18a;
+    width: 210px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.info{
+    background-color: #ede5db;
+    width: 210px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 4px;
 }
