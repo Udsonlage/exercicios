@@ -110,3 +110,14 @@ header{
     border-radius: 10px;
     margin-top: 4px;
 }
+
+.imagens{
+    display: flex;
+    justify-content: center;
+}
+
+.icons{
+    color: #ede5db;
+    width: 50px;
+    padding: 10px;
+}
