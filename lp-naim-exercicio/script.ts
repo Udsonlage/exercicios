@@ -1,11 +1,28 @@
-const botaoHamb = document.querySelector("#botaoHamb") as HTMLButtonElement
-const lista = document.querySelector("#lista")
+// Menu Hamburguer
+class MenuHamburguer{
 
-botaoHamb.addEventListener("click", (evt: MouseEvent): void => {
+    private botao: HTMLButtonElement;
+    private lista: HTMLElement;
 
-    if(lista?.classList.contains("listaEscondida")){
-        lista?.classList.replace("listaEscondida","listaAtiva")
-    }else if(lista?.classList.contains("listaAtiva")){
-        lista?.classList.replace("listaAtiva","listaEscondida")
+    constructor(idBotao: string,idLista: string){
+        this.botao = document.querySelector(idBotao) as HTMLButtonElement
+        this.lista = document.getElementById(idLista) as HTMLElement
+
+        this.alternarMenu()
     }
-})
+
+    private alternarMenu(): void {
+
+        this.botao.addEventListener("click",(evt: MouseEvent): void =>{
+            
+            if(this.lista?.classList.contains       ("listaEscondida")){
+                this.lista?.classList.replace("listaEscondida","listaAtiva")
+            }else if(this.lista?.classList.contains("listaAtiva")){
+                this.lista?.classList.replace("listaAtiva","listaEscondida")
+            }
+        })
+
+    }
+}
+
+const meuMenu = new MenuHamburguer("#botaoHamb", "lista")

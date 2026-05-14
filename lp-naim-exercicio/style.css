@@ -28,11 +28,17 @@ header{
 }
 
 .listaEscondida{
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+
+    transition: all 0.4s ease-in-out;
 }
 
 .listaAtiva{
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 .opcoes{
