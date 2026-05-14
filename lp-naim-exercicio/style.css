@@ -16,6 +16,7 @@ header{
 }
 
 .logoNaim{
+    z-index: 999;
     width: 50px;
     height: 55px;
 }
@@ -28,11 +29,19 @@ header{
 }
 
 .listaEscondida{
+    background-color: #212121;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+
+    z-index: 10;
+
     opacity: 0;
     visibility: hidden;
     transform: translateY(-20px);
 
-    transition: all 0.4s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .listaAtiva{
@@ -42,14 +51,21 @@ header{
 }
 
 .opcoes{
+    cursor: pointer;
     color: #ede5db;
     text-align: center;
     padding: 10px 0px;
     box-sizing: border-box;
-    border-top: 1px solid #ede5db;
-    border-bottom: 1px solid #ede5db;
+    border-top: none;
+    border-bottom: 0.3px solid #ede5db;
     border-left: none;
     border-right: none;
+}
+
+.opcoes:hover{
+    background-color: #424242;
+
+    transition: all 0.2s ease;
 }
 
 .hero{
@@ -147,6 +163,8 @@ header{
     color: #212121;
     background-color: #ede5db;
     border-radius: 50%;
+
+    transition: background-color 0.4s ease;
 }
 
 .imgIcons{

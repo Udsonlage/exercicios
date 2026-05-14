@@ -14,12 +14,7 @@ class MenuHamburguer{
     private alternarMenu(): void {
 
         this.botao.addEventListener("click",(evt: MouseEvent): void =>{
-            
-            if(this.lista?.classList.contains       ("listaEscondida")){
-                this.lista?.classList.replace("listaEscondida","listaAtiva")
-            }else if(this.lista?.classList.contains("listaAtiva")){
-                this.lista?.classList.replace("listaAtiva","listaEscondida")
-            }
+            this.lista.classList.toggle("listaAtiva")
         })
 
     }

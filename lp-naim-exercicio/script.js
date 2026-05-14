@@ -1,12 +1,18 @@
-const botaoHamb = document.querySelector("#botaoHamb");
-const lista = document.querySelector("#lista");
-botaoHamb.addEventListener("click", (evt) => {
-    if (lista?.classList.contains("listaEscondida")) {
-        lista?.classList.replace("listaEscondida", "listaAtiva");
+// Menu Hamburguer
+class MenuHamburguer {
+    botao;
+    lista;
+    constructor(idBotao, idLista) {
+        this.botao = document.querySelector(idBotao);
+        this.lista = document.getElementById(idLista);
+        this.alternarMenu();
     }
-    else if (lista?.classList.contains("listaAtiva")) {
-        lista?.classList.replace("listaAtiva", "listaEscondida");
+    alternarMenu() {
+        this.botao.addEventListener("click", (evt) => {
+            this.lista.classList.toggle("listaAtiva");
+        });
     }
-});
+}
+const meuMenu = new MenuHamburguer("#botaoHamb", "lista");
 export {};
 //# sourceMappingURL=script.js.map
