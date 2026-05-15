@@ -20,7 +20,7 @@ class IconesEImagens {
     imagens;
     classeAtiva;
     //public estaAtivo: boolean = false;
-    constructor(classeAtivaCSS = ".imgsAtivo") {
+    constructor(classeAtivaCSS = "imgsAtivo") {
         this.icones = document.querySelectorAll(".icons");
         this.imagens = document.querySelectorAll(".imgs");
         this.classeAtiva = classeAtivaCSS;
@@ -42,7 +42,11 @@ class IconesEImagens {
         });
         const imagemExibir = document.getElementById(idAlvo);
         if (imagemExibir) {
+            console.log("deu certo");
             imagemExibir.classList.add(this.classeAtiva);
+        }
+        else {
+            console.log(`Não achei nenhuma imagem com o id: ${idAlvo}`);
         }
     }
 }

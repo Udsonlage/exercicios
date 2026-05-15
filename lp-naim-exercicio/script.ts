@@ -30,7 +30,7 @@ class IconesEImagens{
     private classeAtiva: string
 
     //public estaAtivo: boolean = false;
-    constructor(classeAtivaCSS: string = ".imgsAtivo"){
+    constructor(classeAtivaCSS: string = "imgsAtivo"){
         this.icones = document.querySelectorAll<HTMLButtonElement>(".icons")
         this.imagens = document.querySelectorAll<HTMLDivElement>(".imgs")
         this.classeAtiva = classeAtivaCSS
@@ -61,7 +61,10 @@ class IconesEImagens{
         const imagemExibir = document.getElementById(idAlvo) as HTMLDivElement
 
         if(imagemExibir){
+            console.log("deu certo")
             imagemExibir.classList.add(this.classeAtiva)
+        }else{
+            console.log(`Não achei nenhuma imagem com o id: ${idAlvo}`)
         }
     }
 }
