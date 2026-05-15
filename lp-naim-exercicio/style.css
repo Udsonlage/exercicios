@@ -174,12 +174,17 @@ header{
     margin-top: 20px;
 }
 
-.img2, .img3, .img4, .img5, .img6{
-    display: none;
-}
-
 .imgs{
     text-align: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4 ease-in-out;
+}
+
+.imgsAtivo{
+    opacity: 1;
+    visibility: visible;
 }
 
 .imgs h2{
