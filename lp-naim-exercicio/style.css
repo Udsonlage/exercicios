@@ -68,6 +68,12 @@ header{
     transition: all 0.2s ease;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .hero{
     display: flex;
     flex-direction: column;
@@ -79,13 +85,39 @@ header{
     font-size: 3rem;
 }
 
-.botaoSimule{
+/*Botões CTA*/
+
+.botoes{ 
+    position: relative;
     background: linear-gradient(to right, #b8f18a, #ff6600);
     font-weight: bold;
     padding: 10px;
     border: none;
     border-radius: 5px;
     margin-top: 20px;
+    cursor: pointer;
+
+    transition: transform 0.3s ease-out;
+}
+
+.botoes::after{
+    content: "";
+    position: absolute;
+    inset: -1px;
+    z-index: -1;
+    border-radius: 8px;
+    background: linear-gradient(to right, #b8f18a, #ff6600);
+    filter: blur(0);
+
+    transition: filter 0.4s ease;
+}
+
+.botoes:hover{
+    transform: scale(1.1);
+}
+
+.botoes:hover::after{
+    filter: blur(4px);
 }
 
 .imgMulherDirigindo{
@@ -167,19 +199,18 @@ header{
     transition: background-color 0.4s ease;
 }
 
-.imagensIcons{
-    position: relative;
-    width: 90%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .imgIcons{
     width: 90%;
+    height: 300px;
+    object-fit: cover;
     border-radius: 10px;
     margin-top: 20px;
+}
+
+.imagensIcons{
+    position: relative;
+    width: 100%;
+    height: 380px;
 }
 
 .imgs{
@@ -188,24 +219,149 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    height: 300px;
 
     opacity: 0;
     visibility: hidden;
-
-    transition: all 0.4 ease-in-out;
-    transform: scale(0.95);
+    transition: all 0.4s ease;
 }
 
 .imgsAtivo{
     opacity: 1;
     visibility: visible;
-    transform: scale(1);
-    z-index: 2;
 }
 
 .imgs h2{
     color: #ede5db;
     margin-top: 10px;
+}
+
+/*Naim insurtech*/
+
+.insurtech{
+    width: 90%;
+    text-align: center;
+}
+
+.insurtech h1 {
+    color: #b8f18a;
+}
+
+.insurtech p {
+    color: #ede5db;
+}
+
+.insurtech img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.pontos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    width: 90%;
+    background-color: #ede5db;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.pontos h1{
+    color: #212121;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+.divComImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.divComImg > img{
+    width: 50px;
+    height: 50px;
+}
+
+.tracos{
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.tracos::before{
+    content: "-";
+}
+
+.mulherDirigindo2{
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    object-fit: cover;
+}
+
+.complemento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.complemento div{
+    color: #ede5db;
+    margin-top: 10px;
+}
+
+.complemento h1{
+    text-align: center;
+    font-size: 3rem;
+    color: #b8f18a;
+}
+
+.complemento>div>p{
+    padding: 15px;
+}
+
+.pFrequentes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ede5db;
+}
+
+.perguntas{
+    width: 90%;
+    box-sizing: border-box;
+    border-top: none;
+    border-bottom: 0.3px solid #212121;
+    border-left: none;
+    border-right: none;
+}
+
+.abrirComentarios{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.abrirComentarios img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.pFrequentes h1{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.texto{
+    display: none;
 }
